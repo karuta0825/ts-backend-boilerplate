@@ -11,7 +11,6 @@ export default class Person {
   }
 
   public getAge(): number {
-    throw new Error('my');
     return this.age;
   }
 }
