@@ -21,6 +21,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "power-assert": "^1.6.1",
@@ -28,5 +29,11 @@
     "ts-jest": "^24.0.2",
     "ts-node": "^8.2.0",
     "typescript": "^3.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint && npm run fmt"
+    }
   }
 }
